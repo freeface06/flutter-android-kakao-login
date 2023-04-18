@@ -5,11 +5,13 @@
 2. 터미널 열고 sdk 설치
 
 - 설치 명령어
+```
 flutter pub add kakao_flutter_sdk
-
+```
 - pub get 실행
+```
 flutter pub get
-
+```
 3. 키 해시 확인
 
 * cmd창에서 명령어를 실행한다.
@@ -18,11 +20,13 @@ flutter pub get
 예) C:\openssl-0.9.8k_X64\bin
 
 - 디버그키 확인 명령어
+```
 keytool -exportcert -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore -storepass android -keypass android | openssl sha1 -binary | openssl base64
-
+```
 - 릴리즈키 확인 명령어
+```
 keytool -exportcert -alias <RELEASE_KEY_ALIAS> -keystore <RELEASE_KEY_PATH> | openssl sha1 -binary | PATH_TO_OPENSSL_LIBRARY\bin\openssl base64
-
+```
 4. kakao developer에서 적용할 것!
 
 1) 애플리케이션 생성
