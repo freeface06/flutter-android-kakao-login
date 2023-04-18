@@ -50,11 +50,11 @@ AndroidManifest.xml의 <application>...</application> 태그안에 아래 내용
 6. main.dart 수정
 
 - sdk import
-
+```
 import 'package:kakao_flutter_sdk_common/kakao_flutter_sdk_common.dart';
-
+```
 - main.dart 안의 main() 함수에 아래 내용 추가
-
+```
     // 웹 환경에서 카카오 로그인을 정상적으로 완료하려면 runApp() 호출 전 아래 메서드 호출 필요
     WidgetsFlutterBinding.ensureInitialized();
 
@@ -62,7 +62,7 @@ import 'package:kakao_flutter_sdk_common/kakao_flutter_sdk_common.dart';
         nativeAppKey: '${YOUR_NATIVE_APP_KEY}',
         javaScriptAppKey: '${YOUR_JAVASCRIPT_APP_KEY}',
     );
-    
+```
 7. 카카오 로그인 구현 예제
 ```
 // 카카오 로그인 구현 예제
