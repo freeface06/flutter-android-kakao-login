@@ -31,6 +31,7 @@ keytool -exportcert -alias <RELEASE_KEY_ALIAS> -keystore <RELEASE_KEY_PATH> | op
 
 1) 애플리케이션 생성
 2) 플랫폼에 안드로이드 플랫폼 등록 패키지명, 키해시 추가(패키지명은 프로젝트의 android > app > src > main > AndroidManifest.xml 상단에서 패키지명 확인 )
+3) 앱키 확인
 
 5. android > app > src > main > AndroidManifest.xml 수정
 
